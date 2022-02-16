@@ -1,0 +1,42 @@
+@import "base/variables";
+@import "base/mapas";
+@import "base/mixin";
+
+nav{
+    grid-area: nav;
+    align-self: center;
+    margin-right: 2vw;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            @include animaciones;
+            &:hover{
+                transform: scale(1.03);
+                .subMenu{
+                    display: block;
+                }
+            }
+            a{
+                padding: 1.5vh;
+                font-size: 2.2vh;
+                text-decoration: none;
+                color: map-get($map: $minimo, $key:color-minimo );
+                @include animaciones;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+            ul{
+                display: none;
+                list-style: none;
+                position: absolute;
+                li{
+                    margin-top: 2vh;
+                    justify-self: left;
+                }
+            }
+        }
+    }
+
+}

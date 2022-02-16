@@ -1,0 +1,174 @@
+header {
+  grid-area: logo;
+  align-self: center;
+  margin-left: 10vw; }
+
+/* Mapas */
+nav {
+  grid-area: nav;
+  align-self: center;
+  margin-right: 2vw; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+    nav ul li {
+      transition: ease-out 0.5s; }
+      nav ul li:hover {
+        transform: scale(1.03); }
+        nav ul li:hover .subMenu {
+          display: block; }
+      nav ul li a {
+        padding: 1.5vh;
+        font-size: 2.2vh;
+        text-decoration: none;
+        color: black;
+        transition: ease-out 0.5s; }
+        nav ul li a:hover {
+          opacity: 0.5; }
+      nav ul li ul {
+        display: none;
+        list-style: none;
+        position: absolute; }
+        nav ul li ul li {
+          margin-top: 2vh;
+          justify-self: left; }
+
+/* Mapas */
+main h1 {
+  color: black;
+  font-size: 7vh;
+  font-weight: 900;
+  align-self: start; }
+
+main .logoWhatsapp {
+  align-self: center;
+  justify-self: right;
+  margin-right: 3vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+
+footer ul {
+  display: flex;
+  justify-self: right;
+  margin-right: 8vw;
+  list-style: none;
+  align-self: center; }
+
+main {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: ". residencial" ". edificio" ". proy" ". wa";
+  grid-template-rows: 40% 15% 10% 35%;
+  grid-template-columns: 70% 30%; }
+  main h3 {
+    font-weight: 600;
+    grid-area: residencial;
+    align-self: end; }
+  main h1 {
+    grid-area: edificio; }
+  main .tituloVerProyecto {
+    font-size: 2.5vh;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    grid-area: proy;
+    align-self: start;
+    transition: ease-out 0.5s; }
+    main .tituloVerProyecto:hover {
+      opacity: 0.5;
+      font-size: 2.6vh; }
+  main .logoWhatsapp {
+    grid-area: wa; }
+    main .logoWhatsapp img {
+      transition: ease-out 0.5s; }
+      main .logoWhatsapp img:hover {
+        opacity: 0.8;
+        transform: scale(1.05); }
+
+/* Mapas */
+main h1 {
+  color: black;
+  font-size: 7vh;
+  font-weight: 900;
+  align-self: start; }
+
+main .logoWhatsapp {
+  align-self: center;
+  justify-self: right;
+  margin-right: 3vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+
+footer ul {
+  display: flex;
+  justify-self: right;
+  margin-right: 8vw;
+  list-style: none;
+  align-self: center; }
+
+footer {
+  grid-area: pie;
+  display: grid;
+  grid-template-areas: "rrss copy";
+  grid-template-columns: 45% 55%; }
+  footer ul {
+    grid-area: rrss;
+    transition: ease-out 0.5s; }
+  footer li a {
+    transition: ease-out 0.5s; }
+    footer li a svg:hover {
+      opacity: 0.5;
+      transform: scale(1.1); }
+  footer h2 {
+    grid-area: copy;
+    font-size: 2vh;
+    font-weight: 300;
+    align-self: center;
+    color: white; }
+
+/* Mapas */
+main h1 {
+  color: black;
+  font-size: 7vh;
+  font-weight: 900;
+  align-self: start; }
+
+main .logoWhatsapp {
+  align-self: center;
+  justify-self: right;
+  margin-right: 3vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+
+footer ul {
+  display: flex;
+  justify-self: right;
+  margin-right: 8vw;
+  list-style: none;
+  align-self: center; }
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Lato", sans-serif; }
+
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh auto 5vh;
+  background: url(/img/background-index.png);
+  background-size: cover;
+  animation-name: contenedor;
+  animation-duration: 4s; }
+
+.logoMyle {
+  width: 20%;
+  transition: ease-out 0.5s;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+  .logoMyle:hover {
+    opacity: 0.5; }
+
+.letraFuerte {
+  font-weight: 900; }

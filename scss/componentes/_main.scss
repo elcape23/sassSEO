@@ -1,0 +1,47 @@
+@import "base/variables";
+@import "base/mapas";
+@import "base/extends";
+
+main{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". residencial"
+                         ". edificio"
+                         ". proy"
+                         ". wa";
+    grid-template-rows: 40% 15% 10% 35%;
+    grid-template-columns: 70% 30%;
+    h3{
+        font-weight: map-get($map:$mediano, $key:fontweight-mediano);
+        grid-area: residencial;
+        align-self: map-get($map: $minimo, $key:alignself );
+    }
+    h1{
+        grid-area: edificio;
+        @extend %titulos;
+    }
+    .tituloVerProyecto{
+        font-size: map-get($map:$chico, $key:fontsize-chico);
+        font-weight: map-get($map: $mediano, $key:fontweight-mediano );
+        text-decoration: map-get($map:$mediano, $key: textdeco-mediano);
+        color: map-get($map: $mediano, $key:color-mediano );
+        grid-area: proy;
+        align-self: map-get($map:$mediano, $key:alignself-mediano);
+        @include animaciones;
+        &:hover{
+            opacity: 0.5;
+            font-size: 2.6vh;
+        }
+    }
+    .logoWhatsapp{
+        @extend %logoWa;
+        grid-area: wa;
+        img{
+            @include animaciones;
+            &:hover{
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

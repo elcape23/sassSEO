@@ -1,0 +1,28 @@
+/* Mapas */
+
+$minimo: (
+    color-minimo: black,
+    fontsize-minimo: 2vh,
+    fontweight-minimo: 300,
+    textdeco-minimo: none,
+    alignself: end,
+);
+
+$chico: (
+    color-chico: white,
+    fontsize-chico: 2.5vh,
+    fontweight-chico: 500,
+    alignself-chico: center,
+);
+
+$mediano: (
+    color-mediano: black,
+    fontsize-mediano: 5vh,
+    fontweight-mediano: 600,
+    alignself-mediano: start,
+    textdeco-mediano: none,
+);
+
+$grande: (
+    fontweight-grande: 900,
+);

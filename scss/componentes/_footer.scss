@@ -1,0 +1,33 @@
+@import "base/variables";
+@import "base/mapas";
+@import "base/extends";
+
+footer{
+    grid-area: pie;
+    display: grid;
+    grid-template-areas: "rrss copy";
+    grid-template-columns: 45% 55%;
+    ul{
+        grid-area: rrss;
+        @extend %listaSecundaria;
+        @include animaciones;
+        }
+        li{
+            a{
+                @include animaciones;
+                svg{
+                    &:hover{
+                        opacity: 0.5;
+                        transform: scale(1.1);
+                }
+            }
+        }
+    }
+    h2{
+        grid-area: copy;
+        font-size: map-get($map: $minimo, $key: fontsize-minimo);
+        font-weight: map-get($map: $minimo, $key: fontweight-minimo);
+        align-self: map-get($map: $chico, $key: alignself-chico);
+        color: map-get($map: $chico, $key:color-chico );
+    }
+}
